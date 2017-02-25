@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+
+		<h1>Make your own sandwich!</h1>
+
+		<h3>Choose your bread:</h3>
+
+			<input type="radio" name="bread" value="1" placeholder="1">White
+			<input type="radio" name="bread" value="2" placeholder="2">Wheat
+			<input type="radio" name="bread" value="3" placeholder="3">Sourdough
+			<input type="radio" name="bread" value="4" placeholder="4">Multi-Grain
+
+		<h3>Choose your meat:</h3>
+
+			<div id="meat-chooser">
+				<input type="checkbox" name="ham" value="ham">
+				<label for="ham">Ham</label>
+				<input type="checkbox" name="turkey" value="turkey">
+				<label for="turkey">Turkey</label>
+				<input type="checkbox" name="capicola" value="capicola">
+				<label for="capicola">Capicola</label>
+				<input type="checkbox" name="salami" value="salami">
+				<label for="salami">Salami</label>
+				<input type="checkbox" name="pepperoni" value="pepperoni">
+				<label for="pepperoni">Pepperoni</label>
+				<input type="checkbox" name="bacon" value="bacon">
+				<label for="bacon">Bacon</label>
+			</div>
+
+		<h3>Choose your cheese:</h3>
+
+			<input type="radio" name="cheese" value="1" placeholder="1">Cheddar
+			<input type="radio" name="cheese" value="2" placeholder="2">American
+			<input type="radio" name="cheese" value="3" placeholder="3">Provolone
+			<input type="radio" name="cheese" value="4" placeholder="4">Muenster
+
+		<h3>Choose your veggies:</h3>
+
+			<input type="checkbox" name="lettuce" value="lettuce">
+			<label for="lettuce">Lettuce</label>
+			<input type="checkbox" name="tomato" value="tomato">
+			<label for="tomato">Tomato</label>
+			<input type="checkbox" name="greenpepper" value="greenpepper">
+			<label for="greenpepper">Green Pepper</label>
+			<input type="checkbox" name="spinach" value="spinach">
+			<label for="spinach">Spinach</label>
+			<input type="checkbox" name="onion" value="onion">
+			<label for="pepperoni">Onion</label>
+
+		<h3>Choose your condiments:</h3>
+			<input type="checkbox" name="mayonnaise" value="mayonnaise">
+			<label for="mayonnaise">Mayonnaise</label>
+			<input type="checkbox" name="mustard" value="mustard">
+			<label for="mustard">Mustard</label>
+			<input type="checkbox" name="oil" value="oil">
+			<label for="oil">Oil</label>
+			<input type="checkbox" name="vinegar" value="vinegar">
+			<label for="vinegar">Vinegar</label>
+
+		<br>
+		<div id="final-price"></div>
+
+	<script type="text/javascript" src="javascript-files/sandwich.js"></script>
+	<script type="text/javascript" src="javascript-files/dom-handler.js"></script>
+	<script type="text/javascript" src="javascript-files/meat.js"></script>
+	</body>
+</html>
