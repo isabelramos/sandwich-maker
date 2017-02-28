@@ -12,16 +12,20 @@ var SandwichMaker = (function(oldSandwichMaker) {
   }
 
   // Augment the original object with another method
-	oldSandwichMaker.getMeatPrices = function(key) {
-		return meatPrices[key];
-	}
+  oldSandwichMaker.getMeatName = function(name) {
+    return meatPrices;
+  }
+  oldSandwichMaker.getMeatPrices = function(key) {
+    return meatPrices[key];
+  }
+
 	// oldSandwichMaker.setMeatPrices = function() {
 	// 	return meatPrices[key]++;
 	// }
   
 
-  oldSandwichMaker.addMeat = function() {
-  };
+  // oldSandwichMaker.addMeat = function() {
+  // };
 
   // Return the new, augmented object with the new method on it
   return oldSandwichMaker;
