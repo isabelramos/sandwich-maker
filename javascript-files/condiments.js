@@ -2,21 +2,19 @@
 var SandwichMaker = (function(oldSandwichMaker) {
 
   // Private variable to store the different meat prices
-  var meatPrices = {
-  	"Ham": 0.90,
-  	"Turkey": 0.90, 
-    "Capicola": 1.10, 
-  	"Salami": 1.00,
-  	"Pepperoni": 1.10,
-  	"Bacon": 1.50
+  var condimentPrices = {
+  	"Mayonnaise": 0.15,
+  	"Mustard": 0.15, 
+    "Oil": 0.10, 
+  	"Vinegar": 0.10,
   }
 
   // Augment the original object with another method
-  oldSandwichMaker.getMeatName = function(name) {
-    return meatPrices;
+  oldSandwichMaker.getCondimentName = function(name) {
+    return condimentPrices;
   }
-  oldSandwichMaker.getMeatPrices = function(key) {
-    return meatPrices[key];
+  oldSandwichMaker.getCondimentPrices = function(key) {
+    return condimentPrices[key];
   }
 
   // Return the new, augmented object with the new method on it
